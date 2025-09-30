@@ -133,8 +133,9 @@ app.post('/api/send-registration-email', async (req, res) => {
         </head>
         <body>
           <div class="email-container">
-            <div class="header">
-              <h1>¡Bienvenido a nuestra aplicación!</h1>
+            <div class="header" style="padding-top:24px;padding-bottom:8px;">
+              <img src="https://backendmrcoolcat-production.up.railway.app/images/app-icon.png" alt="Mr. Cool Cat" style="height:80px;width:80px;border-radius:50%;margin-bottom:16px;">
+              <h1>¡Bienvenido a Mr. Cool Cat Craft Beer!</h1>
             </div>
             <div class="content">
               <h2>Hola ${first_name} ${last_name},</h2>
@@ -161,7 +162,7 @@ app.post('/api/send-registration-email', async (req, res) => {
             </div>
             <div class="footer">
               <p>Este es un correo automático, por favor no respondas a este mensaje.</p>
-              <p>&copy; ${new Date().getFullYear()} Tu Aplicación. Todos los derechos reservados.</p>
+              <p>&copy; ${new Date().getFullYear()} Mr. Cool Cat Craft Beer. Todos los derechos reservados.</p>
             </div>
           </div>
         </body>
